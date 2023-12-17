@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/Css/style.css">
+
+</head>
+<body>
+
+<main id="container">
+
+  <form id="login_form">
+
+    <div id="form_header">
+
+      <h1>Login</h1>
+
+          <div id="imputs">
+
+              <div class="imput-box">
+
+                <label for="Matricula">
+                  Matrícula
+                  <div class="imput-field">
+
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="Matricula" name="Matricula">  
+
+                  </div>
+
+                </label>
+
+              </div>
+
+          </div> 
+
+          <div id="imputs">
+
+              <div class="imput-box">
+
+                <label for="Senha">
+                  Senha
+                  <div class="imput-field">
+
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" id="Senha" name="Senha">  
+                  </div>
+
+                </label>
+
+
+              </div>
+                
+
+          </div>
+
+     </div>
+
+     <Button type="submit" id="login-botton" onclick="logar(); return false">
+      Login
+    </Button>
+
+  </form>
+  
+</main>
+  
+</body>
+
+<script src="/assets/Js/script.js"></script>
+
+</html>
