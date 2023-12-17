@@ -1,7 +1,6 @@
-const value = document.getElementById('reset');
-const plusButton = document.getElementById ('plus');
-const menosButton = document.getElementById ('menos');
-const resetButton = document.getElementById ('reset');
+const value = document.getElementById('value');
+const ocuparButton = document.getElementById ('ocupar');
+const liberarButton = document.getElementById ('liberar');
 
 const updateValue = () => {
     value.innerHTML = count;
@@ -11,11 +10,20 @@ let count = 0;
 
 let intervalid = 0;
 
-plusButton.addEventListener('mousedown', () => {
+ocuparButton.addEventListener('mousedown', () => {
     intervalid = setInterval(() => {
         count += 1;
+        updateValue();
+    }, 100);
+
+});
+liberarButton.addEventListener('mousedown', () => {
+    intervalid = setInterval(() => {
+        count -= 1;
         updateValue();
 
     }, 100);
 
 });
+
+document.addEventListener('mouseup', () => clearInterval(intervalid));
