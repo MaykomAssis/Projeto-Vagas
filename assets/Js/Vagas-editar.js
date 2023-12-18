@@ -10,18 +10,27 @@ let count = 0;
 
 let intervalid = 0;
 
+// let contador = parseInt(localStorage.getItem('count')) || 0;
+
+//document.getElementById('limit').innerText = contador;
+
 plusButton.addEventListener('click', () => {
         count += 1;
 
+      //  localStorage.setItem('count', count);
+
         updateValue();
         
-    }, 100);
+
+});
 
 menosButton.addEventListener('click', () => {
         count -= 1;
+
+       // localStorage.setItem('count', count);
     
         updateValue();
 
-    }, 100);
+});
 
 document.addEventListener('mouseup', () => clearInterval(intervalid)); 

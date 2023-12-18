@@ -86,6 +86,8 @@ document.addEventListener('mouseup', () => clearInterval(intervalid));
 
 
 
+
+
 /* const value = document.getElementById('value');
 const ocuparButton = document.getElementById('ocupar');
 const liberarButton = document.getElementById('liberar');

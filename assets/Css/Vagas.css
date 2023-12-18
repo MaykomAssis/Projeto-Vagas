@@ -24,6 +24,7 @@ body {
     text-transform: uppercase;
 }
 
+
 #counter {
     background-color: #262626;
     padding: 2rem;
@@ -36,7 +37,6 @@ body {
     justify-self: center;
     width: 50vh;
     padding-left: 53px;
-
 }
 
 #value {
@@ -103,3 +103,24 @@ button:hover{
     text-transform: uppercase;
 }
 
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 19px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #353434;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+a:hover {
+   opacity: .8;
+}

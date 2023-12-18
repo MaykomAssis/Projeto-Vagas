@@ -15,6 +15,15 @@ body {
     background-color: #18181b;
 }
 
+.contain-main__title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    text-transform: uppercase;
+    color: white;
+}
+
 #counter {
     background-color: #262626;
     padding: 2rem;
