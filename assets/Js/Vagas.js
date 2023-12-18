@@ -42,12 +42,14 @@ let count = 0;
 
 let intervalid = 0;
 
-let contador = localStorage.getItem('count') || 0;
+let contador = parseInt(localStorage.getItem('count')) || 0;
+
+document.getElementById('value').innerText = contador;
 
 ocuparButton.addEventListener('click', () => {
         count += 1;
 
-        localStorage.setItem('countador', count);
+        localStorage.setItem('count', count);
 
         if (count >= 1){
 
@@ -60,13 +62,17 @@ ocuparButton.addEventListener('click', () => {
     }, 100);
 
 liberarButton.addEventListener('click', () => {
-        count -= 1;
+    if (count == 0) {
 
-        localStorage.setItem('countador', count);
+        
+
+    } else {count -= 1} 
+        
+        localStorage.setItem('count', count);
 
         if (count <= 1) {
 
-            ocuparButton.disabled = false;
+            ocuparButton.disabled = null;
         }
             liberarButton.disabled = true;
 
