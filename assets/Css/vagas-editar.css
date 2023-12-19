@@ -36,7 +36,7 @@ body {
 
 }
 
-#value {
+#value2 {
     font-size: 8rem;
     color: #fff;
     min-width: 14rem;
@@ -70,7 +70,7 @@ button:hover {
     margin-left: 1rem;
 }
 
-#reset {
+#enviarValor {
     width: 100%;
     font-size: 1.8rem;
     background-color: #3730a3;

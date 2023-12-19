@@ -103,9 +103,9 @@ button:hover{
     text-transform: uppercase;
 }
 
-.hidden {
+ .hidden {
     display: none;
-}
+} 
 
 ul {
     list-style-type: none;
