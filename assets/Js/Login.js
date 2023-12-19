@@ -3,18 +3,10 @@ function logar() {
     var senha = document.getElementById('Senha').value;
     
 
-    if (matricula === 'admin' && senha === 'admin') {
-        alert('Login como admin bem-sucedido!');
+     if ((matricula === 'admin' || matricula === 'user') && senha === matricula) { // matricula === 'admin' || senha === 'admin' &&  matricula === 'senha' || senha === 'senha' 
+        alert('Login bem-sucedido!');
         location.href = "Vagas.html";
-        localStorage.setItem('admin', matricula && senha)
-
-
-    } else if (matricula === 'user' && senha === 'user') {
-        alert('Login como user bem-sucedido!');
-        location.href = "Vagas.html";
-        localStorage.setItem('admin' , matricula && senha)
-
-
+        localStorage.setItem('matricula', matricula); // matricula && senha
     } else {
         alert('Matrícula ou senha incorretos');
     }
@@ -32,4 +24,27 @@ function exibirLinkAdmin() {
 
 
 
+/* function logar() {
+    var matricula = document.getElementById('Matricula').value;
+    var senha = document.getElementById('Senha').value;
 
+    if ((matricula === 'admin' || matricula === 'user') && senha === matricula) {
+        alert('Login bem-sucedido!');
+        location.href = "Vagas.html";
+        localStorage.setItem('matricula', matricula);
+    } else {
+        alert('Matrícula ou senha incorretos');
+    }
+}
+
+function exibirLinkAdmin() {
+    const matricula = localStorage.getItem('matricula');
+    const linkAdmin = document.getElementById('linkAdmin');
+
+    if (matricula === 'admin' && linkAdmin) {
+        linkAdmin.classList.remove('hidden');
+    } else {
+        linkAdmin.classList.add('hidden');
+    }
+}
+*/
