@@ -13,12 +13,16 @@
 }
 
 function exibirLinkAdmin() {
-    const matricula = document.setItem('Matricula');
-    if (matricula === 'admin') {
+    const matricula = localStorage.getItem('Matricula');
+    console.log(matricula);
+    if (matricula === 'admin'){
         const linkAdmin = document.getElementById('linkAdmin');
+        console.log(linkAdmin)
         if (linkAdmin) {
             linkAdmin.classList.remove('hidden');
         }
     }
 } 
+
+exibirLinkAdmin()
 
