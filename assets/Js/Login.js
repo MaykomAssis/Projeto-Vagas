@@ -14,7 +14,6 @@
 
 function exibirLinkAdmin() {
     const matricula = localStorage.getItem('Matricula');
-    console.log(matricula);
     if (matricula === 'admin'){
         const linkAdmin = document.getElementById('linkAdmin');
         console.log(linkAdmin)
@@ -22,7 +21,7 @@ function exibirLinkAdmin() {
             linkAdmin.classList.remove('hidden');
         }
     }
-} 
+}
 
 exibirLinkAdmin()
 
