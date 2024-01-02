@@ -1,7 +1,8 @@
 const value = document.getElementById('value');
 const ocuparButton = document.getElementById ('ocupar');
 const liberarButton = document.getElementById ('liberar');
-const limitValue = document.getElementById("limit")
+const limitValue = document.getElementById("limit");
+const linkAlterar = document.getElementById('linkAdmin');
 
 var count = 0;
 let contador = parseInt(localStorage.getItem('count')) || 0;
@@ -37,10 +38,15 @@ liberarButton.addEventListener('click', () => {
         updateValue2();
 });
 
+linkAlterar.addEventListener('click', () => {
+    location.href = "/Vagas-editar.html";
+});
 
 const updateValue2 = () => {
     value.innerHTML = count;
 };
+
+
 
 
 
