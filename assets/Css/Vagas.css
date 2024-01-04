@@ -33,10 +33,7 @@ body {
 
 #counter div {
     display:flex;
-    align-items: center;
-    justify-self: center;
-    width: 50vh;
-    padding-left: 53px;
+    justify-content: center;
 }
 
 #value {

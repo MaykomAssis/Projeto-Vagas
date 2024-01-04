@@ -78,6 +78,10 @@ button:hover {
     margin-top: 1rem;
 }
 
+#enviarValor::after {
+    color: white;
+}
+
 #voltar {
     width: 50%;
     height: 4rem;

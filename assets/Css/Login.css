@@ -35,8 +35,8 @@ box-sizing: border-box;
 
 #login_form {
     background-color: var(--color-light-50);
-    width: 60vh;
-    height: 55vh;
+    width: 65vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ box-sizing: border-box;
 #form_header {
 
     background-color: #f8fafc;
-    width: 50vh;
+    width: 55vh;
     height: 60vh;
 
     >h1 {
