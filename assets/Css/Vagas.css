@@ -79,6 +79,10 @@ button:hover{
     opacity: .8;
 }
 
+i {
+    display: flex;
+    padding-right: 20px;
+}
 
 
 #ocupar {

@@ -36,7 +36,7 @@ box-sizing: border-box;
 #login_form {
     background-color: var(--color-light-50);
     width: 65vh;
-    height: 70vh;
+    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
