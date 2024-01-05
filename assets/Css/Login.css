@@ -35,8 +35,8 @@ box-sizing: border-box;
 
 #login_form {
     background-color: var(--color-light-50);
-    width: 65vh;
-    height: 55vh;
+    width: 35%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,8 +96,8 @@ box-sizing: border-box;
 
 #login-botton {
     border: none;
-    width: 120px;
-    height: 80px;
+    width: 20%;
+    height: 3vw;
     background-color: #7c3aed;
     color: white;
     margin-bottom: 50px;
